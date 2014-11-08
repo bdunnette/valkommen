@@ -1,0 +1,23 @@
+<head>
+  <title>valkommen</title>
+</head>
+
+<body>
+</body>
+
+<template name="ApplicationLayout">
+  {{> yield}}
+</template>
+
+<template name="CurrentVolunteers">
+  <button>Click Me</button>
+  <ul>
+  {{#each volunteers}}
+    <li><a href="{{pathFor 'volunteer.view'}}">{{name}}</a></li>
+  {{/each}}
+  </ul>
+</template>
+
+<template name="VolunteerView">
+  <h3>{{volunteer.name}}</h3>
+</template>
