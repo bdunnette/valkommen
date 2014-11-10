@@ -9,7 +9,13 @@ if (Meteor.isClient) {
 
   Template.CurrentVolunteers.events({
     'click button': function () {
-      People.insert({name: chance.name()});
+      People.insert({name: chance.name(), attendances: {}});
+    }
+  });
+  
+  Template.VolunteerView.events({
+    'click button': function (event, template) {
+      console.log(template.data.volunteer._id);
     }
   });
 }

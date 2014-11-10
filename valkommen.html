@@ -20,4 +20,11 @@
 
 <template name="VolunteerView">
   <h3>{{volunteer.name}}</h3>
+  <h5>{{volunteer._id}}</h5>
+  <button>Add Attendance</button>
+  <ul>
+    {{#each volunteer.attendances}}
+    <li>{{.}}</li>
+    {{/each}}
+  </ul>
 </template>
