@@ -1,0 +1,3 @@
+[submodule "packages/bdunnette:camera"]
+	path = packages/bdunnette:camera
+	url = git@github.com:bdunnette/meteor-camera.git

@@ -9,9 +9,8 @@ insecure
 iron:router
 ian:bootstrap-3
 cfs:http-publish
-mdg:camera
 http
 aldeed:collection2
 aldeed:autoform
 mrt:moment
-
+bdunnette:camera
